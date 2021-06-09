@@ -1,0 +1,21 @@
+{
+  "name": "three-demo",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "gh-pages -d src"
+  },
+  "devDependencies": {
+    "vite": "^2.3.0"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.0",
+    "three": "^0.128.0"
+  },
+  "main": "3D.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

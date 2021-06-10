@@ -97,6 +97,9 @@ canvas {
     color: rgba(255,99,71,0);
     text-shadow: 3px 3px #DD1010;
     cursor: pointer;
+    transition: .5s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s
   }
   .projects img{
     opacity: 0.6;
@@ -117,6 +120,9 @@ canvas {
   .contact a:hover{
   color: rgba(255,99,71,0);
   text-shadow: 3px 3px #DD1010;
+    transition: .5s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s
   }
   .contact a{
     color: rgba(6,22,33,0.95);

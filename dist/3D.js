@@ -47,7 +47,7 @@ scene.add(pointLight, ambientLight);
 
 function addStar() {
 
-  const asteroidTexture = new THREE.TextureLoader().load('assets/asteroid.jpg');
+  const asteroidTexture = new THREE.TextureLoader().load('asteroid.jpg');
   const geometry = new THREE.SphereGeometry(0.5, 24, 24);
   const material = new THREE.MeshStandardMaterial({ map:asteroidTexture });
   const particle = new THREE.Mesh(geometry, material);
@@ -70,12 +70,12 @@ scene.background = backgroundColor;
 // Cube
 const textureLoader = new THREE.TextureLoader();
 
-const texture0 = textureLoader.load( 'assets/cube/3.png' );
-const texture1 = textureLoader.load( 'assets/cube/2.png' );
-const texture2 = textureLoader.load( 'assets/cube/5.png' );
-const texture3 = textureLoader.load( 'assets/cube/4.png' );
-const texture4 = textureLoader.load( 'assets/cube/1.png' );
-const texture5 = textureLoader.load( 'assets/cube/6.png' );
+const texture0 = textureLoader.load( '3.png' );
+const texture1 = textureLoader.load( '2.png' );
+const texture2 = textureLoader.load( '5.png' );
+const texture3 = textureLoader.load( '4.png' );
+const texture4 = textureLoader.load( '1.png' );
+const texture5 = textureLoader.load( '6.png' );
 
 var codePictures = [
   new THREE.MeshStandardMaterial( { map: texture0 } ),
@@ -109,8 +109,8 @@ const moon = new THREE.Mesh(
 scene.add(moon);
 
 
-const earthTexture = new THREE.TextureLoader().load('assets/earth.jpg');
-const normalEarth = new THREE.TextureLoader().load('assets/earthnormal.png');
+const earthTexture = new THREE.TextureLoader().load('earth.jpg');
+const normalEarth = new THREE.TextureLoader().load('earthnormal.png');
 
 const earth = new THREE.Mesh(
     new THREE.SphereGeometry(150, 32, 32),

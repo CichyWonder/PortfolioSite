@@ -20,7 +20,7 @@ main {
   width: 100%;
   margin: 0px auto;
   padding: 120px 0px;
-  
+
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 
@@ -40,106 +40,195 @@ canvas {
 
 
 
-  header{
-    background: var(--dark-bg);
-    grid-column: 2 / span 5;
-    font-size: 2.5rem;
-    padding: 3rem;
-    margin-bottom: var(--spacing);
-  }
+header{
+  background: var(--dark-bg);
+  grid-column: 2 / span 6;
+  font-size: 2.5rem;
+  padding: 3rem;
+  margin-bottom: var(--spacing);
+}
 
-  section {
-    grid-column: 2 / 8;
-    padding: 1rem;
-    background: var(--dark-bg);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: var(--spacing);
-  }
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
 
-  blockquote {
-    margin: 0;
-    padding: 4rem;
-    grid-column: 2 / span 9;
-    margin-bottom: var(--spacing);
-  }
+blockquote {
+  margin: 0;
+  padding: 4rem;
+  grid-column: 2 / span 12;
+  margin-bottom: var(--spacing);
+}
 
-  blockquote p {
-    color: rgba(6,22,33,0.95);
-    font-size: 4rem;
-    display: inline;
-    line-height: 1;
-  }
+blockquote p {
+  color: rgba(6,22,33,0.95);
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
+}
 
-  .about{
-    grid-column: 6 / 12;
-  }
-  .qoute{
-    grid-column: 5 / 12;
-  }
-  .contact h1{
-    color: #DD1010;
-  }
-  nav {
-    color: rgba(6,22,33,0.95);
-    position: fixed;
-    text-align: center;
-    margin-top: 5rem;
-  }
-  nav ul{
-    list-style: none;
-  }
-  nav li{
-    padding-bottom: 5rem;
-  }
-  nav a:hover{
-    color: rgba(255,99,71,0);
-    text-shadow: 3px 3px #DD1010;
-    cursor: pointer;
-    transition: .5s;
-    transition-timing-function: ease;
-    transition-delay: 0.1s
-  }
-  .projects img{
-    opacity: 0.6;
-  }
-  .projects a{
-    color:#FAFAFA;
-    text-decoration: none;
-  }
-  .projects a:hover{
+.about{
+  grid-column: 6 / 12;
+}
+.contact h1{
+  color: rgb(6,22,33);
+}
+nav {
+  color: rgba(6,22,33,0.95);
+  position: fixed;
+  text-align: center;
+  margin-top: 5rem;
+}
+nav ul{
+  list-style: none;
+}
+nav li{
+  padding-bottom: 5rem;
+}
+nav a:hover{
   color: rgba(255,99,71,0);
   text-shadow: 3px 3px #DD1010;
-  }
-
-  .contact ul li{
-    display: inline;
-    padding-right: 1rem;
-  }
-  .contact a:hover{
+  cursor: pointer;
+  transition: .2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s
+}
+.projects img{
+  opacity: 0.6;
+}
+.projects a{
+  color:#FAFAFA;
+  text-decoration: none;
+}
+.projects a:hover{
   color: rgba(255,99,71,0);
   text-shadow: 3px 3px #DD1010;
-    transition: .5s;
-    transition-timing-function: ease;
-    transition-delay: 0.1s
-  }
-  .contact a{
-    color: rgba(6,22,33,0.95);
-  }
-  .content{
-    position: absolute;
-    top:46%;
-    left: 10%;
-  }
-  .overlay{
-    transition: .5s;
-    opacity: 0;
-  }
-  .wrapper:hover .overlay{
-    opacity: 1;
-  }
-  .contentallezon{
+  font-weight: 1000;
+  cursor: pointer;
+  transition: .2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s
+}
+
+.contact ul li{
+  display: inline;
+  padding-right: 1rem;
+}
+.contact ul{
+  padding-left: 0;
+}
+.contact a:hover{
+  color: rgba(255,99,71,0);
+  text-shadow: 3px 3px #DD1010;
+  transition: .2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s
+}
+.contact a{
+  color: rgba(6,22,33,0.95);
+}
+.icon i{
+  color: #DD1010;
+}
+.content{
   position: absolute;
-  top:55%;
-  left: 10%;
-  }
+  top:35%;
+  left: 8%;
+}
+.overlay{
+  position:absolute;
+  background-color: rgba(6, 22, 33, 0.7);
+  width: 47.5rem;
+  height: 34.6rem;
+  top:37.74%;
+  transition: .5s;
+  opacity: 0;
+}
+.wrapper:hover .overlay{
+  opacity: 1;
+}
+.contentallezon{
+  position: absolute;
+  top:35%;
+  left: 8%;
+}
+.overlayallezon{
+  position:absolute;
+  background-color: rgba(6, 22, 33, 0.7);
+  width: 47.5rem;
+  height: 34.6rem;
+  top:46.3%;
+  transition: .5s;
+  opacity: 0;
+}
+.wrapperallezon:hover .overlayallezon{
+  opacity: 1;
+}
+.projects p{
+  font-size: 1.3rem;
+}
+.contactconntent{
+  float: right;
+  padding-right: 14rem;
+  padding-top: 15rem;
+}
+textarea{
+  resize: none;
+  width: 450px;
+  margin-bottom: 0.5rem;
+  background-color:rgba(6, 22, 33, 0.95) ;
+  border: none;
+  color: #FAFAFA;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 14px;
+  outline: none;
+  box-sizing: border-box;
+  padding-left: 15px;
+
+}
+form{
+  padding-top: 1.5rem;
+}
+input{
+  width: 450px;
+  height: 45px;
+  margin-bottom: 2rem;
+  background-color:rgba(6, 22, 33, 0.95) ;
+  border: none;
+  color: #FAFAFA;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 14px;
+  outline: none;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+::placeholder{
+  color: #FAFAFA;
+  opacity: .7;
+  padding: 10px;
+}
+button{
+  height: 45px;
+  width: 125px;
+  color: #FAFAFA;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  background-color: rgba(221, 16, 16,0.95);
+}
+button:hover{
+  background-color:rgba(6, 22, 33, 0.95);
+  cursor: pointer;
+  transition: .2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s;
+}
